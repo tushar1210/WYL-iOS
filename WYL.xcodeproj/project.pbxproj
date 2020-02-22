@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0D571A210B5103AD5131E07D /* Pods_WYLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5E15AE7E2412669DB40049 /* Pods_WYLTests.framework */; };
+		7886DDE124016E080070E506 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7886DDE024016E080070E506 /* Constants.swift */; };
 		78C4948124005511000628AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4948024005511000628AB /* AppDelegate.swift */; };
 		78C4948324005511000628AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4948224005511000628AB /* SceneDelegate.swift */; };
 		78C4948824005511000628AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C4948624005511000628AB /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		30196E083EF3DB23E07D39E6 /* Pods_WYL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39228E15D57457E5C6B0AEDE /* Pods-WYLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYLTests.release.xcconfig"; path = "Target Support Files/Pods-WYLTests/Pods-WYLTests.release.xcconfig"; sourceTree = "<group>"; };
 		782BE3425E2375895AD802D7 /* Pods-WYL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL.debug.xcconfig"; path = "Target Support Files/Pods-WYL/Pods-WYL.debug.xcconfig"; sourceTree = "<group>"; };
+		7886DDE024016E080070E506 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = WYL/Constants.swift; sourceTree = SOURCE_ROOT; };
 		78C4947D24005511000628AB /* WYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C4948024005511000628AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78C4948224005511000628AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,7 +141,6 @@
 				D28F98233F1EB0A5A5DF67A0 /* Pods-WYLTests.debug.xcconfig */,
 				39228E15D57457E5C6B0AEDE /* Pods-WYLTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,6 +172,7 @@
 				78C4948024005511000628AB /* AppDelegate.swift */,
 				78C4948224005511000628AB /* SceneDelegate.swift */,
 				78C4948624005511000628AB /* Main.storyboard */,
+				7886DDE024016E080070E506 /* Constants.swift */,
 				78C494D92401347E000628AB /* Controller */,
 				78C4948924005513000628AB /* Assets.xcassets */,
 				78C4948B24005513000628AB /* LaunchScreen.storyboard */,
@@ -499,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7886DDE124016E080070E506 /* Constants.swift in Sources */,
 				78C494B1240100D9000628AB /* HomeVC.swift in Sources */,
 				78C4948124005511000628AB /* AppDelegate.swift in Sources */,
 				78C4948324005511000628AB /* SceneDelegate.swift in Sources */,

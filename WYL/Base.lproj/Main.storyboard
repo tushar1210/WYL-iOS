@@ -97,7 +97,7 @@
         <!--View Controller-->
         <scene sceneID="ZR5-Aq-cYd">
             <objects>
-                <viewController id="Kht-YM-jWJ" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Kht-YM-jWJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jmT-bp-4O0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +112,7 @@
         <!--View Controller-->
         <scene sceneID="SXU-pU-2zs">
             <objects>
-                <viewController id="DO3-qy-LW7" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="DO3-qy-LW7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Wx-sa-P5U">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -127,9 +127,9 @@
         <!--View Controller-->
         <scene sceneID="Rtg-bA-nER">
             <objects>
-                <viewController id="k1w-af-Via" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="k1w-af-Via" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lyJ-1n-Tv5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6TQ-g2-CxK"/>
