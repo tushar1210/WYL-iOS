@@ -1,0 +1,6 @@
+framework module Pods_WYL_WYLUITests {
+  umbrella header "Pods-WYL-WYLUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

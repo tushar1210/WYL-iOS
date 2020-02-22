@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D571A210B5103AD5131E07D /* Pods_WYLTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF5E15AE7E2412669DB40049 /* Pods_WYLTests.framework */; };
 		78C4948124005511000628AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4948024005511000628AB /* AppDelegate.swift */; };
 		78C4948324005511000628AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C4948224005511000628AB /* SceneDelegate.swift */; };
 		78C4948824005511000628AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C4948624005511000628AB /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 		78C494D52401137B000628AB /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78C494C32401137A000628AB /* Raleway-ExtraBold.ttf */; };
 		78C494D62401137B000628AB /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78C494C42401137A000628AB /* Raleway-MediumItalic.ttf */; };
 		78C494D8240133BA000628AB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C494D7240133BA000628AB /* LoginVC.swift */; };
+		BFF26FA92AE10DE8140F9434 /* Pods_WYL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30196E083EF3DB23E07D39E6 /* Pods_WYL.framework */; };
+		F6201EDD22EEF51A2A572E46 /* Pods_WYL_WYLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04A6C21A4BA75A81EB8881 /* Pods_WYL_WYLUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00CF1CB29C4EAB6EAD5ACEDE /* Pods-WYL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL.release.xcconfig"; path = "Target Support Files/Pods-WYL/Pods-WYL.release.xcconfig"; sourceTree = "<group>"; };
+		30196E083EF3DB23E07D39E6 /* Pods_WYL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39228E15D57457E5C6B0AEDE /* Pods-WYLTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYLTests.release.xcconfig"; path = "Target Support Files/Pods-WYLTests/Pods-WYLTests.release.xcconfig"; sourceTree = "<group>"; };
+		782BE3425E2375895AD802D7 /* Pods-WYL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL.debug.xcconfig"; path = "Target Support Files/Pods-WYL/Pods-WYL.debug.xcconfig"; sourceTree = "<group>"; };
 		78C4947D24005511000628AB /* WYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C4948024005511000628AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78C4948224005511000628AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +94,11 @@
 		78C494C32401137A000628AB /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
 		78C494C42401137A000628AB /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
 		78C494D7240133BA000628AB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		7EABAA4C1E72405BCB4474EC /* Pods-WYL-WYLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL-WYLUITests.release.xcconfig"; path = "Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91894366098FC101A0D61DB6 /* Pods-WYL-WYLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL-WYLUITests.debug.xcconfig"; path = "Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D28F98233F1EB0A5A5DF67A0 /* Pods-WYLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYLTests.debug.xcconfig"; path = "Target Support Files/Pods-WYLTests/Pods-WYLTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC04A6C21A4BA75A81EB8881 /* Pods_WYL_WYLUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYL_WYLUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5E15AE7E2412669DB40049 /* Pods_WYLTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WYLTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF26FA92AE10DE8140F9434 /* Pods_WYL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D571A210B5103AD5131E07D /* Pods_WYLTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +122,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6201EDD22EEF51A2A572E46 /* Pods_WYL_WYLUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05A8546DE648384027430D3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				782BE3425E2375895AD802D7 /* Pods-WYL.debug.xcconfig */,
+				00CF1CB29C4EAB6EAD5ACEDE /* Pods-WYL.release.xcconfig */,
+				91894366098FC101A0D61DB6 /* Pods-WYL-WYLUITests.debug.xcconfig */,
+				7EABAA4C1E72405BCB4474EC /* Pods-WYL-WYLUITests.release.xcconfig */,
+				D28F98233F1EB0A5A5DF67A0 /* Pods-WYLTests.debug.xcconfig */,
+				39228E15D57457E5C6B0AEDE /* Pods-WYLTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		78C4947424005511000628AB = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +150,8 @@
 				78C4949624005513000628AB /* WYLTests */,
 				78C494A124005513000628AB /* WYLUITests */,
 				78C4947E24005511000628AB /* Products */,
+				05A8546DE648384027430D3D /* Pods */,
+				ED70DA71B2A71DC3006BC122 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +232,16 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		ED70DA71B2A71DC3006BC122 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30196E083EF3DB23E07D39E6 /* Pods_WYL.framework */,
+				DC04A6C21A4BA75A81EB8881 /* Pods_WYL_WYLUITests.framework */,
+				FF5E15AE7E2412669DB40049 /* Pods_WYLTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,9 +249,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78C494A724005513000628AB /* Build configuration list for PBXNativeTarget "WYL" */;
 			buildPhases = (
+				110144FCFCA99922F3FEFBAB /* [CP] Check Pods Manifest.lock */,
 				78C4947924005511000628AB /* Sources */,
 				78C4947A24005511000628AB /* Frameworks */,
 				78C4947B24005511000628AB /* Resources */,
+				76A52C540B9F71C0B45BF600 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78C494AA24005513000628AB /* Build configuration list for PBXNativeTarget "WYLTests" */;
 			buildPhases = (
+				E2906329255BACAF662E5BC3 /* [CP] Check Pods Manifest.lock */,
 				78C4948F24005513000628AB /* Sources */,
 				78C4949024005513000628AB /* Frameworks */,
 				78C4949124005513000628AB /* Resources */,
@@ -243,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78C494AD24005513000628AB /* Build configuration list for PBXNativeTarget "WYLUITests" */;
 			buildPhases = (
+				6D128B119B0E2264650D30A0 /* [CP] Check Pods Manifest.lock */,
 				78C4949A24005513000628AB /* Sources */,
 				78C4949B24005513000628AB /* Frameworks */,
 				78C4949C24005513000628AB /* Resources */,
+				1D1DC588A9228ED51AFC3B55 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +390,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		110144FCFCA99922F3FEFBAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WYL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D1DC588A9228ED51AFC3B55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D128B119B0E2264650D30A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WYL-WYLUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A52C540B9F71C0B45BF600 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WYL/Pods-WYL-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WYL/Pods-WYL-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WYL/Pods-WYL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2906329255BACAF662E5BC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WYLTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78C4947924005511000628AB /* Sources */ = {
@@ -524,6 +673,7 @@
 		};
 		78C494A824005513000628AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 782BE3425E2375895AD802D7 /* Pods-WYL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +692,7 @@
 		};
 		78C494A924005513000628AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00CF1CB29C4EAB6EAD5ACEDE /* Pods-WYL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +711,7 @@
 		};
 		78C494AB24005513000628AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28F98233F1EB0A5A5DF67A0 /* Pods-WYLTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +734,7 @@
 		};
 		78C494AC24005513000628AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39228E15D57457E5C6B0AEDE /* Pods-WYLTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -604,6 +757,7 @@
 		};
 		78C494AE24005513000628AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91894366098FC101A0D61DB6 /* Pods-WYL-WYLUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -624,6 +778,7 @@
 		};
 		78C494AF24005513000628AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EABAA4C1E72405BCB4474EC /* Pods-WYL-WYLUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
