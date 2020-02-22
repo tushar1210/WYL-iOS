@@ -10,21 +10,28 @@ import UIKit
 
 class LoginVC: UIViewController {
 
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var fb: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func addCornerRadius(button:UIButton){
+           button.layer.cornerRadius = button.frame.height/2
     }
-    */
-
+    
+    @IBAction func loginButton(_ sender: Any) {
+    
+    }
+    
+    @IBAction func fb(_ sender: Any) {
+    
+    }
+    
 }
