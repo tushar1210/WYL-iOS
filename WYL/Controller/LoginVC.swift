@@ -14,11 +14,19 @@ class LoginVC: UIViewController {
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var fb: UIButton!
+    @IBOutlet weak var apple: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        addCornerRadius(button: loginButton)
+        addCornerRadius(button: fb)
+        addCornerRadius(button: apple)
+        fb.imageView?.contentMode = .scaleAspectFit
+        apple.imageView?.contentMode = .scaleAspectFit
+        apple.layer.borderWidth=1
+        apple.layer.borderColor=UIColor.black.cgColor
+        
     }
     
     
@@ -32,6 +40,8 @@ class LoginVC: UIViewController {
     
     @IBAction func fb(_ sender: Any) {
     
+    }
+    @IBAction func apple(_ sender: Any) {
     }
     
 }
