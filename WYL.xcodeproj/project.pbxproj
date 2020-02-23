@@ -96,6 +96,7 @@
 		78C494C32401137A000628AB /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
 		78C494C42401137A000628AB /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
 		78C494D7240133BA000628AB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		78D168E5240309C50051267F /* WYL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WYL.entitlements; sourceTree = "<group>"; };
 		7EABAA4C1E72405BCB4474EC /* Pods-WYL-WYLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL-WYLUITests.release.xcconfig"; path = "Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91894366098FC101A0D61DB6 /* Pods-WYL-WYLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL-WYLUITests.debug.xcconfig"; path = "Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D28F98233F1EB0A5A5DF67A0 /* Pods-WYLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYLTests.debug.xcconfig"; path = "Target Support Files/Pods-WYLTests/Pods-WYLTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 		78C4947F24005511000628AB /* WYL */ = {
 			isa = PBXGroup;
 			children = (
+				78D168E5240309C50051267F /* WYL.entitlements */,
 				78C4948024005511000628AB /* AppDelegate.swift */,
 				78C4948224005511000628AB /* SceneDelegate.swift */,
 				78C4948624005511000628AB /* Main.storyboard */,
@@ -679,6 +681,7 @@
 			baseConfigurationReference = 782BE3425E2375895AD802D7 /* Pods-WYL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WYL/WYL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDDB7WX63J;
 				INFOPLIST_FILE = WYL/Info.plist;
@@ -698,6 +701,7 @@
 			baseConfigurationReference = 00CF1CB29C4EAB6EAD5ACEDE /* Pods-WYL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WYL/WYL.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDDB7WX63J;
 				INFOPLIST_FILE = WYL/Info.plist;
