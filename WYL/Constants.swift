@@ -17,3 +17,19 @@ let base64Credentials = credentialData.base64EncodedString()
 let headers = [
 "Authorization": "Basic \(base64Credentials)"
 ]
+
+struct User {
+    var name:String
+    var id:String
+    var userType:String
+    var email:String
+//    var profilePic
+    var country:String
+    init() {
+        name = ""
+        id=""
+        userType=""
+        email=""
+        country=""
+    }
+}

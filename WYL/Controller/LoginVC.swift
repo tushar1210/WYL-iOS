@@ -18,8 +18,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var fb: UIButton!
     @IBOutlet weak var apple: UIButton!
     
-    var end = URL(string: base+"api/users/login`")!
-    
+    var end = URL(string: base+"api/users/login")!
+    var user = User()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +45,24 @@ class LoginVC: UIViewController {
         if emailTF.text != "" && passwordTF.text != ""{
             let params:Dictionary = ["email":emailTF.text!,"password":passwordTF.text!] as [String : String]
             AF.request(end, method: .post, parameters: params, encoding: URLEncoding.default, headers: .init(headers)).responseJSON { (response) in
-                print(JSON(response.data))
+                let dat = JSON(response.data!)
+                if(dat["status"].boolValue==true){
+                    print(dat)
+                    self.user.name = dat["user"]["name"].stringValue
+                    self.user.id = dat["user"]["id"].stringValue
+                    self.user.userType = dat["user"]["user_type"].stringValue
+                    self.user.email = dat["user"]["email"].stringValue
+                    self.user.country = dat["user"]["country"].stringValue
+                }else{
+                    let ac = UIAlertController(title: "Incorrect Credentials", message: "Please check the credentials", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "OK", style: .default) { (action) in
+                        ac.dismiss(animated: true)
+                    }
+                    ac.addAction(action)
+                    self.present(ac,animated: true)
+                }
             }
+            
         
         }
         
