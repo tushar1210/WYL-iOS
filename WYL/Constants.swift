@@ -15,6 +15,5 @@ let credentialData = "\(userAuthtoken):\(passwordAuthtoken)".data(using: String.
 let base64Credentials = credentialData.base64EncodedString()
 
 let headers = [
-"Authorization": "Basic \(base64Credentials)",
-"Accept": "application/json",
-"Content-Type": "application/json" ]
+"Authorization": "Basic \(base64Credentials)"
+]

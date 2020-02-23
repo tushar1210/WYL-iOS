@@ -18,7 +18,7 @@ class LoginVC: UIViewController {
     @IBOutlet weak var fb: UIButton!
     @IBOutlet weak var apple: UIButton!
     
-    var end = URL(string: base+"api/users/register")!
+    var end = URL(string: base+"api/users/login`")!
     
     
     override func viewDidLoad() {
@@ -44,33 +44,14 @@ class LoginVC: UIViewController {
         
         if emailTF.text != "" && passwordTF.text != ""{
             let params:Dictionary = ["email":emailTF.text!,"password":passwordTF.text!] as [String : String]
-            print(params)
-
-            do{
-                var request = URLRequest(url: end)
-                do{
-                let encodedURLRequest = try URLEncodedFormParameterEncoder.default.encode(params,into: request)
-                    request.method = .post
-                    request.setValue("application/x-www-form-urlencoded charset=utf-8", forHTTPHeaderField: "Content-Type")
-                    request.headers = .init(headers)
-                    print(request.httpBody)
-                    
-                    AF.request(encodedURLRequest).response{
-                        response in
-                        let json=JSON(response.data)
-                        print(json)
-                    }
-                }catch{
-                    print("eeror")
-                }
-                
+            AF.request(end, method: .post, parameters: params, encoding: URLEncoding.default, headers: .init(headers)).responseJSON { (response) in
+                print(JSON(response.data))
             }
-        
         
         }
         
-        
     }
+        
     
     @IBAction func fb(_ sender: Any) {
     
