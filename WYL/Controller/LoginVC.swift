@@ -41,15 +41,35 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        let params:Dictionary = ["email":emailTF.text!,"password":passwordTF.text!] as [String : String]
+        
         if emailTF.text != "" && passwordTF.text != ""{
-            AF.request(end.absoluteString,method: .post,parameters:params,encoding: URLEncoding.default,headers: .init(headers)).response{
-                response in
-                let json = JSON(response.data)
-                print(json)
+            let params:Dictionary = ["email":emailTF.text!,"password":passwordTF.text!] as [String : String]
+            print(params)
+
+            do{
+                var request = URLRequest(url: end)
+                do{
+                let encodedURLRequest = try URLEncodedFormParameterEncoder.default.encode(params,into: request)
+                    request.method = .post
+                    request.setValue("application/x-www-form-urlencoded charset=utf-8", forHTTPHeaderField: "Content-Type")
+                    request.headers = .init(headers)
+                    print(request.httpBody)
+                    
+                    AF.request(encodedURLRequest).response{
+                        response in
+                        let json=JSON(response.data)
+                        print(json)
+                    }
+                }catch{
+                    print("eeror")
+                }
+                
             }
-            
+        
+        
         }
+        
+        
     }
     
     @IBAction func fb(_ sender: Any) {
@@ -59,3 +79,6 @@ class LoginVC: UIViewController {
     }
     
 }
+
+//var a:Dictionary?
+
