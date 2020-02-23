@@ -43,17 +43,12 @@ class LoginVC: UIViewController {
     @IBAction func loginButton(_ sender: Any) {
         let params:Dictionary = ["email":emailTF.text!,"password":passwordTF.text!] as [String : String]
         if emailTF.text != "" && passwordTF.text != ""{
-            AF.request(end.absoluteString,method: .post,parameters:params,encoder: URLEncodedFormParameterEncoder.default,headers: .init(headers)).response{
+            AF.request(end.absoluteString,method: .post,parameters:params,encoding: URLEncoding.default,headers: .init(headers)).response{
                 response in
                 let json = JSON(response.data)
                 print(json)
             }
             
-            
-//            AF.upload(multipartFormData: { (form) in
-//                form.append(Data(self.emailTF.text!.utf8), withName: "email")
-//                form.append(Data(self.passwordTF.text!.utf8), withName: "password")
-//            }, to: end,headers: .init(headers))
         }
     }
     
