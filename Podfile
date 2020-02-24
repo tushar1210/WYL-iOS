@@ -8,6 +8,7 @@ target 'WYL' do
   # Pods for WYL
   pod 'Alamofire'
   pod 'SwiftyJSON'
+  #pod 'RealmSwift'
   target 'WYLTests' do
     inherit! :search_paths
     # Pods for testing
