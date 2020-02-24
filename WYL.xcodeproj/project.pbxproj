@@ -36,6 +36,7 @@
 		78C494D52401137B000628AB /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78C494C32401137A000628AB /* Raleway-ExtraBold.ttf */; };
 		78C494D62401137B000628AB /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78C494C42401137A000628AB /* Raleway-MediumItalic.ttf */; };
 		78C494D8240133BA000628AB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C494D7240133BA000628AB /* LoginVC.swift */; };
+		78D168E72403D9100051267F /* ForgotPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D168E62403D9100051267F /* ForgotPassVC.swift */; };
 		BFF26FA92AE10DE8140F9434 /* Pods_WYL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30196E083EF3DB23E07D39E6 /* Pods_WYL.framework */; };
 		F6201EDD22EEF51A2A572E46 /* Pods_WYL_WYLUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC04A6C21A4BA75A81EB8881 /* Pods_WYL_WYLUITests.framework */; };
 /* End PBXBuildFile section */
@@ -97,6 +98,7 @@
 		78C494C42401137A000628AB /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
 		78C494D7240133BA000628AB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		78D168E5240309C50051267F /* WYL.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WYL.entitlements; sourceTree = "<group>"; };
+		78D168E62403D9100051267F /* ForgotPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassVC.swift; sourceTree = "<group>"; };
 		7EABAA4C1E72405BCB4474EC /* Pods-WYL-WYLUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL-WYLUITests.release.xcconfig"; path = "Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests.release.xcconfig"; sourceTree = "<group>"; };
 		91894366098FC101A0D61DB6 /* Pods-WYL-WYLUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYL-WYLUITests.debug.xcconfig"; path = "Target Support Files/Pods-WYL-WYLUITests/Pods-WYL-WYLUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D28F98233F1EB0A5A5DF67A0 /* Pods-WYLTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYLTests.debug.xcconfig"; path = "Target Support Files/Pods-WYLTests/Pods-WYLTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			children = (
 				78C494D7240133BA000628AB /* LoginVC.swift */,
 				78C494B0240100D9000628AB /* HomeVC.swift */,
+				78D168E62403D9100051267F /* ForgotPassVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D168E72403D9100051267F /* ForgotPassVC.swift in Sources */,
 				7886DDE124016E080070E506 /* Constants.swift in Sources */,
 				78C494B1240100D9000628AB /* HomeVC.swift in Sources */,
 				78C4948124005511000628AB /* AppDelegate.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7It-v7-ICc">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -181,7 +181,90 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hk5-h9-3kv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024" y="-186"/>
+            <point key="canvasLocation" x="1028" y="-170"/>
+        </scene>
+        <!--Forgot PassVC-->
+        <scene sceneID="CvV-xP-lcc">
+            <objects>
+                <viewController id="7It-v7-ICc" customClass="ForgotPassVC" customModule="WYL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="99h-lq-Rta">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="Dgm-fp-gKR">
+                                <rect key="frame" x="160" y="30" width="55" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dgm-fp-gKR" secondAttribute="height" multiplier="1:1" id="nRN-rB-mRi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORGOT YOUR PASSWORD?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBv-QF-D3j">
+                                <rect key="frame" x="47" y="102" width="281" height="25"/>
+                                <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkR-Xo-sPJ">
+                                <rect key="frame" x="0.0" y="135" width="375" height="67"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fkR-Xo-sPJ" secondAttribute="height" multiplier="375:67" id="0EC-nz-JMD"/>
+                                </constraints>
+                                <string key="text">Enter your email and we will send you password
+ reset instructions</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="s6C-Ws-4na">
+                                <rect key="frame" x="19" y="218" width="337.5" height="110"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4qp-qd-sl6">
+                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHX-2m-M2S">
+                                        <rect key="frame" x="0.0" y="65" width="337.5" height="45"/>
+                                        <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ZLS-8M-g2c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                                        <state key="normal" title="SEND PASSWORD RESET">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="send:" destination="7It-v7-ICc" eventType="touchUpInside" id="yrV-jI-obO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XBv-QF-D3j" firstAttribute="centerX" secondItem="j3S-3O-SD4" secondAttribute="centerX" id="5pS-Xu-TAR"/>
+                            <constraint firstItem="fkR-Xo-sPJ" firstAttribute="centerX" secondItem="j3S-3O-SD4" secondAttribute="centerX" id="8q7-lX-6hI"/>
+                            <constraint firstItem="s6C-Ws-4na" firstAttribute="centerX" secondItem="j3S-3O-SD4" secondAttribute="centerX" id="CrP-Sg-SZF"/>
+                            <constraint firstItem="Dgm-fp-gKR" firstAttribute="centerX" secondItem="j3S-3O-SD4" secondAttribute="centerX" id="DgC-sM-tsC"/>
+                            <constraint firstItem="XBv-QF-D3j" firstAttribute="width" secondItem="99h-lq-Rta" secondAttribute="width" multiplier="0.749333" id="I0C-r2-xT0"/>
+                            <constraint firstItem="s6C-Ws-4na" firstAttribute="width" secondItem="99h-lq-Rta" secondAttribute="width" multiplier="0.9" id="I3S-Qy-u2V"/>
+                            <constraint firstItem="Dgm-fp-gKR" firstAttribute="top" secondItem="j3S-3O-SD4" secondAttribute="top" constant="30" id="NHM-3P-T5f"/>
+                            <constraint firstItem="Dgm-fp-gKR" firstAttribute="width" secondItem="99h-lq-Rta" secondAttribute="width" multiplier="0.146667" id="Sw2-e2-82j"/>
+                            <constraint firstItem="fkR-Xo-sPJ" firstAttribute="width" secondItem="99h-lq-Rta" secondAttribute="width" id="Yis-60-XFk"/>
+                            <constraint firstItem="XBv-QF-D3j" firstAttribute="top" secondItem="Dgm-fp-gKR" secondAttribute="bottom" constant="17" id="bsz-lz-qe5"/>
+                            <constraint firstItem="fkR-Xo-sPJ" firstAttribute="top" secondItem="XBv-QF-D3j" secondAttribute="bottom" constant="8" id="uys-Jh-RQm"/>
+                            <constraint firstItem="s6C-Ws-4na" firstAttribute="top" secondItem="fkR-Xo-sPJ" secondAttribute="bottom" constant="16" id="zD9-SA-Gpo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j3S-3O-SD4"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTF" destination="4qp-qd-sl6" id="jIc-kb-4AZ"/>
+                        <outlet property="send" destination="xHX-2m-M2S" id="Mhd-ry-ch9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZu-HI-zlV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="143.19999999999999" y="-1239.1304347826087"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="49C-yb-cWW">
