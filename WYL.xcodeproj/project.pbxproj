@@ -232,11 +232,19 @@
 		78C494D92401347E000628AB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				78F6B49D2404CCE000A7D2DC /* Login */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78F6B49D2404CCE000A7D2DC /* Login */ = {
+			isa = PBXGroup;
+			children = (
 				78C494D7240133BA000628AB /* LoginVC.swift */,
 				78C494B0240100D9000628AB /* HomeVC.swift */,
 				78D168E62403D9100051267F /* ForgotPassVC.swift */,
 			);
-			path = Controller;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		ED70DA71B2A71DC3006BC122 /* Frameworks */ = {

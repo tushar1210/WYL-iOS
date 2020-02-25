@@ -25,23 +25,35 @@ class ForgotPassVC: UIViewController {
     
 
     @IBAction func send(_ sender: Any) {
-        var params:Parameters = ["email":emailTF.text!]
+        let params:Parameters = ["email":emailTF.text!]
         if(emailTF.text! != ""){
             AF.request(URL(string: base+end)!, method: .post, parameters: params,encoding: URLEncoding.default, headers: .init(headers)).responseJSON{
                 (response) in
-                let dat = JSON(response.data)
+                let dat = JSON(response.data!)
                 if(dat["status"].boolValue==false){
-                    let alertController = UIAlertController(title: "Error", message: "Unable to reset password right now, please try again later", preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Error", message: dat["message"].stringValue, preferredStyle: .alert)
                     let action = UIAlertAction(title: "OK", style: .default) {(action) in
                         self.dismiss(animated: true, completion: nil)
                     }
                     alertController.addAction(action)
                     self.present(alertController,animated: true)
                 }else{
-                    
+                    let alertController = UIAlertController(title: "Success", message: "Please check your email to change the password", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "OK", style: .default) {(action) in
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                    alertController.addAction(action)
+                    self.present(alertController,animated: true)
                 }
-                print(JSON(response.data))
+                print(JSON(dat))
             }
+        }else{
+            let alertController = UIAlertController(title: "Fail", message: "Please enter a valid email id to change the password", preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default) {(action) in
+                self.dismiss(animated: true, completion: nil)
+            }
+            alertController.addAction(action)
+            self.present(alertController,animated: true)
         }
     }
     
