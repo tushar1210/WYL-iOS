@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1w-af-Via">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
         <array key="Raleway-ExtraBold.ttf">
             <string>Raleway-ExtraBold</string>
         </array>
@@ -131,6 +134,7 @@
                         <outlet property="fb" destination="aBg-Wb-4Xr" id="eMu-XS-E6S"/>
                         <outlet property="loginButton" destination="LuY-qQ-3Br" id="ALJ-ow-DHg"/>
                         <outlet property="signupButton" destination="IcC-0v-gj5" id="uvA-Ix-ILw"/>
+                        <segue destination="k1w-af-Via" kind="show" id="ULV-7v-fCy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -279,6 +283,7 @@
                         <outlet property="passwordTF" destination="BbO-wY-LE1" id="XfW-F2-dHf"/>
                         <outlet property="send" destination="Nh5-DN-jKr" id="KMg-ac-Cas"/>
                         <outlet property="type" destination="6eb-4U-BDs" id="nM4-t0-gta"/>
+                        <segue destination="k1w-af-Via" kind="show" id="ULA-bQ-AkP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjA-5E-Pu5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -303,18 +308,76 @@
         <!--View Controller-->
         <scene sceneID="Rtg-bA-nER">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="k1w-af-Via" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="k1w-af-Via" customClass="ViewController" customModule="WYL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lyJ-1n-Tv5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-rj-Y5y">
+                                <rect key="frame" x="67" y="116" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhf-Zw-dMQ">
+                                <rect key="frame" x="97" y="245" width="127" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WYL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6f-ql-pQC">
+                                <rect key="frame" x="232" y="245" width="44" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="19"/>
+                                <color key="textColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MISSION - EMPOWERING &amp; INFORMING THE RENTAL COMMUNITY." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yg-0X-8wO">
+                                <rect key="frame" x="13" y="276" width="349" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="11"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8s-Ow-1Ze">
+                                <rect key="frame" x="13" y="304" width="349" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <mutableString key="text">We use the possessive form of the word ‘who' because we're giving
+renters ownership of their living situation by putting housing in their hands. Through landlord reviews, community insights, neighborhood
+engagement, and available listings, we're ensuring that all WYL renters have a smooth and quality experience throughout their search and stay. For home providers, we’re providing feedback on ways they can improve, providing renter snapshots so they can better understand who they’re renting to, and we’re creating simple tools to seamlessly post and get rentals booked. Take ownership of your living situation and join the
+</mutableString>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="10.5"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-k7-IiM">
+                                <rect key="frame" x="13" y="490" width="343" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
+                                <state key="normal" title="CONTINE NOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#WYLCommunity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-Jk-680">
+                                <rect key="frame" x="132" y="453" width="110" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6TQ-g2-CxK"/>
                     </view>
                     <navigationItem key="navigationItem" id="aDM-yr-ggb"/>
+                    <connections>
+                        <outlet property="goButton" destination="bs4-k7-IiM" id="19W-nk-9qy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hk5-h9-3kv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="-170"/>
+            <point key="canvasLocation" x="1028" y="-170.46476761619192"/>
         </scene>
         <!--Forgot PassVC-->
         <scene sceneID="CvV-xP-lcc">
@@ -536,6 +599,7 @@
                         <outlet property="fb" destination="5Pv-44-Xld" id="Ecg-go-Ncj"/>
                         <outlet property="loginButton" destination="eoV-wf-tuF" id="oTf-yu-VyY"/>
                         <outlet property="passwordTF" destination="1Np-39-HIJ" id="kAZ-QV-bYR"/>
+                        <segue destination="k1w-af-Via" kind="show" id="OWU-AN-Lhf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2G-we-0Nn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -547,6 +611,10 @@
         <image name="appleLogo" width="56" height="66"/>
         <image name="fb" width="105" height="105"/>
         <image name="logo" width="391" height="168"/>
+        <image name="shadow" width="381" height="381"/>
         <image name="tip" width="119" height="127"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ULA-bQ-AkP"/>
+    </inferredMetricsTieBreakers>
 </document>
