@@ -150,27 +150,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="avI-QH-B7D">
-                                <rect key="frame" x="160" y="44" width="55" height="55"/>
+                                <rect key="frame" x="369.5" y="-447" width="127" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="avI-QH-B7D" secondAttribute="height" multiplier="1:1" id="SGz-Re-rYq"/>
                                     <constraint firstAttribute="width" secondItem="avI-QH-B7D" secondAttribute="height" multiplier="1:1" id="kO6-S7-U6a"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-G6-0Gy">
-                                <rect key="frame" x="147" y="107" width="81" height="23.5"/>
+                                <rect key="frame" x="339.5" y="-312" width="187" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-YJ-zBK">
-                                <rect key="frame" x="158.5" y="580" width="58" height="32"/>
+                                <rect key="frame" x="366" y="580" width="134" height="32"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <state key="normal" title="SKIP &gt;&gt;">
                                     <color key="titleColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eb-4U-BDs">
-                                <rect key="frame" x="114.5" y="542" width="146" height="32"/>
+                                <rect key="frame" x="264.5" y="542" width="337" height="32"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <state key="normal" title="I AM A LANDLORD">
                                     <color key="titleColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -180,10 +180,10 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LSY-6Y-PAJ">
-                                <rect key="frame" x="29.5" y="186" width="316" height="320"/>
+                                <rect key="frame" x="68" y="-233" width="730" height="739"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-ve-RFJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="316" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="730" height="115"/>
                                         <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="9uS-Mt-APc"/>
@@ -193,28 +193,28 @@
                                         <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-Xn-ipI">
-                                        <rect key="frame" x="0.0" y="55" width="316" height="45"/>
+                                        <rect key="frame" x="0.0" y="125" width="730" height="114.5"/>
                                         <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BbO-wY-LE1">
-                                        <rect key="frame" x="0.0" y="110" width="316" height="45"/>
+                                        <rect key="frame" x="0.0" y="249.5" width="730" height="115"/>
                                         <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5tx-In-An8">
-                                        <rect key="frame" x="0.0" y="165" width="316" height="45"/>
+                                        <rect key="frame" x="0.0" y="374.5" width="730" height="115"/>
                                         <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nh5-DN-jKr">
-                                        <rect key="frame" x="0.0" y="220" width="316" height="45"/>
+                                        <rect key="frame" x="0.0" y="499.5" width="730" height="114.5"/>
                                         <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                         <state key="normal" title="SIGN UP">
@@ -226,7 +226,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-ff-LYf">
-                                        <rect key="frame" x="0.0" y="275" width="316" height="45"/>
+                                        <rect key="frame" x="0.0" y="624" width="730" height="115"/>
                                         <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="titleEdgeInsets" minX="-35" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-25" minY="10" maxX="0.0" maxY="10"/>
@@ -244,7 +244,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review your landlord and find your next home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xh5-LY-N2I">
-                                <rect key="frame" x="37.5" y="136.5" width="300" height="16.5"/>
+                                <rect key="frame" x="86.5" y="-282.5" width="693" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
                                 <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -300,10 +300,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LYy-jq-wOK"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cdk-CR-oGP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nq-Qd-7d7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="497"/>
+            <point key="canvasLocation" x="1849" y="130"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Rtg-bA-nER">
@@ -313,10 +314,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-rj-Y5y">
-                                <rect key="frame" x="67" y="116" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhf-Zw-dMQ">
                                 <rect key="frame" x="97" y="245" width="127" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -342,14 +339,21 @@
                                 <rect key="frame" x="13" y="304" width="349" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">We use the possessive form of the word ‘who' because we're giving
+                                <string key="text">We use the possessive form of the word ‘who' because we're giving
 renters ownership of their living situation by putting housing in their hands. Through landlord reviews, community insights, neighborhood
 engagement, and available listings, we're ensuring that all WYL renters have a smooth and quality experience throughout their search and stay. For home providers, we’re providing feedback on ways they can improve, providing renter snapshots so they can better understand who they’re renting to, and we’re creating simple tools to seamlessly post and get rentals booked. Take ownership of your living situation and join the
-</mutableString>
+</string>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="10.5"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#WYLCommunity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-Jk-680">
+                                <rect key="frame" x="132" y="453" width="110" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-k7-IiM">
                                 <rect key="frame" x="13" y="490" width="343" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -358,14 +362,14 @@ engagement, and available listings, we're ensuring that all WYL renters have a s
                                 <state key="normal" title="CONTINE NOW">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="DO3-qy-LW7" kind="show" id="ACh-pp-mdi"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#WYLCommunity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-Jk-680">
-                                <rect key="frame" x="132" y="453" width="110" height="16"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-rj-Y5y">
+                                <rect key="frame" x="68" y="108" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
-                                <color key="textColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6TQ-g2-CxK"/>
@@ -377,7 +381,7 @@ engagement, and available listings, we're ensuring that all WYL renters have a s
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hk5-h9-3kv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="-170.46476761619192"/>
+            <point key="canvasLocation" x="945" y="130"/>
         </scene>
         <!--Forgot PassVC-->
         <scene sceneID="CvV-xP-lcc">
@@ -563,7 +567,9 @@ engagement, and available listings, we're ensuring that all WYL renters have a s
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-Qz-K4F">
                                 <rect key="frame" x="91" y="320.5" width="182" height="30"/>
-                                <state key="normal" title="Forgot Password"/>
+                                <state key="normal" title="Forgot Password">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="7It-v7-ICc" kind="show" id="FGr-zN-dlc"/>
                                 </connections>
@@ -615,6 +621,6 @@ engagement, and available listings, we're ensuring that all WYL renters have a s
         <image name="tip" width="119" height="127"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ULA-bQ-AkP"/>
+        <segue reference="ULV-7v-fCy"/>
     </inferredMetricsTieBreakers>
 </document>
