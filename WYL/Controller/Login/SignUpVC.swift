@@ -29,7 +29,13 @@ class SignUpVC: UIViewController {
         fb.imageView?.contentMode = .scaleAspectFit
         addCorner(tf: [emailTF,nameTF,passwordTF,confPasswordTF])
         emailTF.layer.cornerRadius = 25
-        
+        autoShrink(button: [fb,send,type])
+    }
+    
+    func autoShrink(button:[UIButton]){
+        for i in button{
+            i.titleLabel?.adjustsFontSizeToFitWidth = true
+        }
     }
     
     func addCorner(tf:[UITextField]){
@@ -50,7 +56,7 @@ class SignUpVC: UIViewController {
             }
             
             AF.request(URL(string: base+end)!, method: .post, parameters: params, encoding: URLEncoding.default, headers: .init(headers)).responseJSON { (response) in
-                let dat = JSON(response.data)
+                let dat = JSON(response.data as Any)
                 print(dat)
                 if dat["status"].boolValue==true{
                     //Segue to main

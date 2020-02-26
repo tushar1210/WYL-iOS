@@ -100,9 +100,8 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaX-q9-Q5b">
-                                <rect key="frame" x="158.5" y="615" width="58" height="32"/>
+                                <rect key="frame" x="131.5" y="615" width="112.5" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="58" id="PRD-V3-Sl7"/>
                                     <constraint firstAttribute="height" constant="32" id="XzU-nu-5QS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
@@ -120,6 +119,7 @@
                             <constraint firstItem="oiI-V2-WzN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="JWJ-eh-eYH"/>
                             <constraint firstItem="oiI-V2-WzN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OHm-sq-QeO"/>
                             <constraint firstItem="omH-YM-PMY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R3h-J2-eEM"/>
+                            <constraint firstItem="WaX-q9-Q5b" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="RHK-mE-EYa"/>
                             <constraint firstItem="omH-YM-PMY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YuP-4M-z0z"/>
                             <constraint firstItem="WaX-q9-Q5b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zRo-AU-lhg"/>
                             <constraint firstItem="WaX-q9-Q5b" firstAttribute="top" secondItem="oiI-V2-WzN" secondAttribute="bottom" constant="28" id="zqI-74-QdM"/>
@@ -145,78 +145,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="avI-QH-B7D">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="avI-QH-B7D">
                                 <rect key="frame" x="160" y="44" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="avI-QH-B7D" secondAttribute="height" multiplier="1:1" id="SGz-Re-rYq"/>
+                                    <constraint firstAttribute="width" secondItem="avI-QH-B7D" secondAttribute="height" multiplier="1:1" id="kO6-S7-U6a"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-G6-0Gy">
-                                <rect key="frame" x="147" y="107" width="81" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ehV-G6-0Gy">
+                                <rect key="frame" x="147" y="107" width="81" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-Xn-ipI">
-                                <rect key="frame" x="32" y="239" width="311" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BbO-wY-LE1">
-                                <rect key="frame" x="32" y="292" width="311" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5tx-In-An8">
-                                <rect key="frame" x="32" y="345" width="311" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nh5-DN-jKr">
-                                <rect key="frame" x="29" y="401" width="316" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
-                                <state key="normal" title="SIGN UP">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="send:" destination="Kht-YM-jWJ" eventType="touchUpInside" id="pyt-Qb-VIT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-ff-LYf">
-                                <rect key="frame" x="29" y="468" width="316" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="titleEdgeInsets" minX="-35" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <inset key="imageEdgeInsets" minX="-25" minY="10" maxX="0.0" maxY="10"/>
-                                <state key="normal" title="SIGN IN WITH FACEBOOK" image="fb">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                </state>
-                                <connections>
-                                    <action selector="fb:" destination="Kht-YM-jWJ" eventType="touchUpInside" id="WKN-Al-HG0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-YJ-zBK">
-                                <rect key="frame" x="160" y="580" width="58" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-YJ-zBK">
+                                <rect key="frame" x="158.5" y="580" width="58" height="32"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <state key="normal" title="SKIP &gt;&gt;">
                                     <color key="titleColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eb-4U-BDs">
-                                <rect key="frame" x="114" y="542" width="146" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eb-4U-BDs">
+                                <rect key="frame" x="114.5" y="542" width="146" height="32"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <state key="normal" title="I AM A LANDLORD">
                                     <color key="titleColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -225,23 +175,99 @@
                                     <action selector="type:" destination="Kht-YM-jWJ" eventType="touchUpInside" id="T7K-Kp-o0n"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-ve-RFJ">
-                                <rect key="frame" x="32" y="186" width="311" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review your landlord and find your next home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh5-LY-N2I">
-                                <rect key="frame" x="37" y="137" width="300" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LSY-6Y-PAJ">
+                                <rect key="frame" x="29.5" y="186" width="316" height="320"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-ve-RFJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="316" height="45"/>
+                                        <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="45" id="9uS-Mt-APc"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-Xn-ipI">
+                                        <rect key="frame" x="0.0" y="55" width="316" height="45"/>
+                                        <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BbO-wY-LE1">
+                                        <rect key="frame" x="0.0" y="110" width="316" height="45"/>
+                                        <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5tx-In-An8">
+                                        <rect key="frame" x="0.0" y="165" width="316" height="45"/>
+                                        <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nh5-DN-jKr">
+                                        <rect key="frame" x="0.0" y="220" width="316" height="45"/>
+                                        <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="SIGN UP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="send:" destination="Kht-YM-jWJ" eventType="touchUpInside" id="pyt-Qb-VIT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="leading" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-ff-LYf">
+                                        <rect key="frame" x="0.0" y="275" width="316" height="45"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="titleEdgeInsets" minX="-35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="-25" minY="10" maxX="0.0" maxY="10"/>
+                                        <state key="normal" title="SIGN IN WITH FACEBOOK" image="fb">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fb:" destination="Kht-YM-jWJ" eventType="touchUpInside" id="WKN-Al-HG0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LSY-6Y-PAJ" secondAttribute="height" multiplier="79:80" id="Wh2-d2-Qci"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Review your landlord and find your next home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xh5-LY-N2I">
+                                <rect key="frame" x="37.5" y="136.5" width="300" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
                                 <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LSY-6Y-PAJ" firstAttribute="width" secondItem="jmT-bp-4O0" secondAttribute="width" multiplier="0.842667" id="4X4-Ag-aEy"/>
+                            <constraint firstItem="iXT-xe-y8b" firstAttribute="bottom" secondItem="z2S-YJ-zBK" secondAttribute="bottom" constant="35" id="5JL-hx-wmi"/>
+                            <constraint firstItem="LSY-6Y-PAJ" firstAttribute="centerX" secondItem="iXT-xe-y8b" secondAttribute="centerX" id="9h1-4K-5Je"/>
+                            <constraint firstItem="6eb-4U-BDs" firstAttribute="centerX" secondItem="iXT-xe-y8b" secondAttribute="centerX" id="AVr-HH-Cj4"/>
+                            <constraint firstItem="ehV-G6-0Gy" firstAttribute="top" secondItem="avI-QH-B7D" secondAttribute="bottom" constant="8" id="Dep-ny-fWh"/>
+                            <constraint firstItem="6eb-4U-BDs" firstAttribute="top" secondItem="LSY-6Y-PAJ" secondAttribute="bottom" constant="36" id="HZj-uA-doJ"/>
+                            <constraint firstItem="Xh5-LY-N2I" firstAttribute="centerX" secondItem="iXT-xe-y8b" secondAttribute="centerX" id="Qhm-MN-McY"/>
+                            <constraint firstItem="avI-QH-B7D" firstAttribute="top" relation="lessThanOrEqual" secondItem="iXT-xe-y8b" secondAttribute="top" multiplier="0.7" constant="44" id="S0G-uV-VJO"/>
+                            <constraint firstItem="LSY-6Y-PAJ" firstAttribute="top" secondItem="Xh5-LY-N2I" secondAttribute="bottom" constant="33" id="Uys-ta-VH9"/>
+                            <constraint firstItem="z2S-YJ-zBK" firstAttribute="centerX" secondItem="iXT-xe-y8b" secondAttribute="centerX" id="Vl5-is-XoU"/>
+                            <constraint firstItem="6eb-4U-BDs" firstAttribute="width" secondItem="jmT-bp-4O0" secondAttribute="width" multiplier="0.389333" id="g8J-b3-Gw2"/>
+                            <constraint firstItem="z2S-YJ-zBK" firstAttribute="width" secondItem="jmT-bp-4O0" secondAttribute="width" multiplier="0.154667" id="gJa-jf-glK"/>
+                            <constraint firstItem="avI-QH-B7D" firstAttribute="centerX" secondItem="iXT-xe-y8b" secondAttribute="centerX" id="hK0-iw-MuO"/>
+                            <constraint firstItem="avI-QH-B7D" firstAttribute="width" secondItem="jmT-bp-4O0" secondAttribute="width" multiplier="0.146667" id="jw2-e1-97e"/>
+                            <constraint firstItem="Xh5-LY-N2I" firstAttribute="top" secondItem="ehV-G6-0Gy" secondAttribute="bottom" constant="6" id="lwZ-RS-Ius"/>
+                            <constraint firstItem="ehV-G6-0Gy" firstAttribute="centerX" secondItem="iXT-xe-y8b" secondAttribute="centerX" id="pl6-UP-cal"/>
+                            <constraint firstItem="ehV-G6-0Gy" firstAttribute="width" secondItem="jmT-bp-4O0" secondAttribute="width" multiplier="0.216" id="pqh-EI-hSY"/>
+                            <constraint firstItem="z2S-YJ-zBK" firstAttribute="top" secondItem="6eb-4U-BDs" secondAttribute="bottom" constant="6" id="rT9-Dh-Wam"/>
+                            <constraint firstItem="Xh5-LY-N2I" firstAttribute="width" secondItem="jmT-bp-4O0" secondAttribute="width" multiplier="0.8" id="v0g-xX-bHh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="iXT-xe-y8b"/>
                     </view>
                     <navigationItem key="navigationItem" id="p0L-8v-3D0"/>
@@ -299,19 +325,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="Dgm-fp-gKR">
-                                <rect key="frame" x="160" y="30" width="55" height="55"/>
+                                <rect key="frame" x="369.5" y="30" width="127" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Dgm-fp-gKR" secondAttribute="height" multiplier="1:1" id="nRN-rB-mRi"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORGOT YOUR PASSWORD?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBv-QF-D3j">
-                                <rect key="frame" x="47" y="102" width="281" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORGOT YOUR PASSWORD?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XBv-QF-D3j">
+                                <rect key="frame" x="108.5" y="174" width="649" height="25"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkR-Xo-sPJ">
-                                <rect key="frame" x="0.0" y="135" width="375" height="67"/>
+                                <rect key="frame" x="0.0" y="207" width="866" height="154.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="fkR-Xo-sPJ" secondAttribute="height" multiplier="375:67" id="0EC-nz-JMD"/>
@@ -323,15 +349,15 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="s6C-Ws-4na">
-                                <rect key="frame" x="19" y="218" width="337.5" height="110"/>
+                                <rect key="frame" x="43.5" y="377.5" width="779" height="298"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4qp-qd-sl6">
-                                        <rect key="frame" x="0.0" y="0.0" width="337.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="779" height="139"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHX-2m-M2S">
-                                        <rect key="frame" x="0.0" y="65" width="337.5" height="45"/>
+                                        <rect key="frame" x="0.0" y="159" width="779" height="139"/>
                                         <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="ZLS-8M-g2c"/>
@@ -345,6 +371,9 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="s6C-Ws-4na" secondAttribute="height" multiplier="144:55" id="TZQ-gQ-3DS"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -382,86 +411,122 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="9kF-4B-ldJ">
-                                <rect key="frame" x="160" y="43" width="55" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tip" translatesAutoresizingMaskIntoConstraints="NO" id="9kF-4B-ldJ">
+                                <rect key="frame" x="155.5" y="43" width="53.5" height="53.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9kF-4B-ldJ" secondAttribute="height" multiplier="1:1" id="heF-sO-0Gg"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-S0-6pP">
-                                <rect key="frame" x="156" y="109" width="62" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-S0-6pP">
+                                <rect key="frame" x="145.5" y="107.5" width="73" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-ExtraBold" family="Raleway" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login with Facebook or your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lda-2v-Mfw">
-                                <rect key="frame" x="75" y="141" width="224" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login with Facebook or your email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lda-2v-Mfw">
+                                <rect key="frame" x="62" y="139" width="240" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="14"/>
                                 <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testing@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GOI-6d-5mg">
-                                <rect key="frame" x="41" y="196" width="311" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.86013306224794517" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoV-wf-tuF">
-                                <rect key="frame" x="16" y="355" width="343" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
-                                <state key="normal" title="LOGIN">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginButton:" destination="ocf-FX-Xke" eventType="touchUpInside" id="dKy-JB-Zaw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5G-bg-Zaq">
-                                <rect key="frame" x="16" y="499" width="343" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="5" minY="10" maxX="0.0" maxY="10"/>
-                                <state key="normal" title="SIGN IN WITH APPLE" image="appleLogo">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="apple:" destination="ocf-FX-Xke" eventType="touchUpInside" id="m4R-Pz-IWe"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pv-44-Xld">
-                                <rect key="frame" x="16" y="427" width="343" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <inset key="imageEdgeInsets" minX="-25" minY="10" maxX="0.0" maxY="10"/>
-                                <state key="normal" title="SIGN IN WITH FACEBOOK" image="fb">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                </state>
-                                <connections>
-                                    <action selector="fb:" destination="ocf-FX-Xke" eventType="touchUpInside" id="ETP-wz-JFN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-Qz-K4F">
-                                <rect key="frame" x="130" y="310" width="115" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Z3w-F9-9aE">
+                                <rect key="frame" x="18" y="194.5" width="328" height="99"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testing@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="GOI-6d-5mg">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="40"/>
+                                        <color key="backgroundColor" white="0.86013306224794517" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="JHb-Uh-l2l"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="tester1E@" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1Np-39-HIJ">
+                                        <rect key="frame" x="0.0" y="59" width="328" height="40"/>
+                                        <color key="backgroundColor" white="0.86013306224794517" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Z3w-F9-9aE" secondAttribute="height" multiplier="96:29" id="v32-fn-5Vu"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="9NR-vD-OIP">
+                                <rect key="frame" x="18" y="365.5" width="328" height="177.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoV-wf-tuF">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="47"/>
+                                        <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="D8T-aA-65l"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="LOGIN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButton:" destination="ocf-FX-Xke" eventType="touchUpInside" id="dKy-JB-Zaw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pv-44-Xld">
+                                        <rect key="frame" x="0.0" y="65" width="328" height="47.5"/>
+                                        <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="-25" minY="10" maxX="0.0" maxY="10"/>
+                                        <state key="normal" title="SIGN IN WITH FACEBOOK" image="fb">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fb:" destination="ocf-FX-Xke" eventType="touchUpInside" id="ETP-wz-JFN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5G-bg-Zaq">
+                                        <rect key="frame" x="0.0" y="130.5" width="328" height="47"/>
+                                        <inset key="imageEdgeInsets" minX="5" minY="10" maxX="0.0" maxY="10"/>
+                                        <state key="normal" title="SIGN IN WITH APPLE" image="appleLogo">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="apple:" destination="ocf-FX-Xke" eventType="touchUpInside" id="m4R-Pz-IWe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9NR-vD-OIP" secondAttribute="height" multiplier="24:13" id="aB2-8w-HsQ"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsf-Qz-K4F">
+                                <rect key="frame" x="91" y="320.5" width="182" height="30"/>
                                 <state key="normal" title="Forgot Password"/>
                                 <connections>
                                     <segue destination="7It-v7-ICc" kind="show" id="FGr-zN-dlc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="tester1E@" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="1Np-39-HIJ">
-                                <rect key="frame" x="41" y="249" width="311" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.86013306224794517" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9kF-4B-ldJ" firstAttribute="top" secondItem="eyu-ry-4nx" secondAttribute="top" constant="43" id="1Ff-lh-02q"/>
+                            <constraint firstItem="lda-2v-Mfw" firstAttribute="width" secondItem="b2h-xp-kSH" secondAttribute="width" multiplier="0.66" id="2gA-Z2-7KU"/>
+                            <constraint firstItem="Z3w-F9-9aE" firstAttribute="centerX" secondItem="eyu-ry-4nx" secondAttribute="centerX" id="Bzx-P8-Uj6"/>
+                            <constraint firstItem="qsf-Qz-K4F" firstAttribute="centerX" secondItem="eyu-ry-4nx" secondAttribute="centerX" id="CEa-Ib-0vF"/>
+                            <constraint firstItem="sgq-S0-6pP" firstAttribute="top" secondItem="9kF-4B-ldJ" secondAttribute="bottom" constant="11" id="E70-r4-ui8"/>
+                            <constraint firstItem="9NR-vD-OIP" firstAttribute="width" secondItem="b2h-xp-kSH" secondAttribute="width" multiplier="0.9" id="It6-Gl-Xg5"/>
+                            <constraint firstItem="Z3w-F9-9aE" firstAttribute="top" secondItem="lda-2v-Mfw" secondAttribute="bottom" constant="39" id="Ksv-mp-OrV"/>
+                            <constraint firstItem="9kF-4B-ldJ" firstAttribute="centerX" secondItem="eyu-ry-4nx" secondAttribute="centerX" id="TDO-Oe-Hgd"/>
+                            <constraint firstItem="Z3w-F9-9aE" firstAttribute="width" secondItem="b2h-xp-kSH" secondAttribute="width" multiplier="0.9" id="UiU-3O-mfR"/>
+                            <constraint firstItem="sgq-S0-6pP" firstAttribute="width" secondItem="b2h-xp-kSH" secondAttribute="width" multiplier="0.2" id="Vac-S4-7rS"/>
+                            <constraint firstItem="lda-2v-Mfw" firstAttribute="top" secondItem="sgq-S0-6pP" secondAttribute="bottom" constant="8" id="bNQ-l4-IDW"/>
+                            <constraint firstItem="9NR-vD-OIP" firstAttribute="top" secondItem="qsf-Qz-K4F" secondAttribute="bottom" constant="15" id="c7y-0H-Dya"/>
+                            <constraint firstItem="qsf-Qz-K4F" firstAttribute="width" secondItem="b2h-xp-kSH" secondAttribute="width" multiplier="0.5" id="e14-gS-bd9"/>
+                            <constraint firstItem="lda-2v-Mfw" firstAttribute="centerX" secondItem="eyu-ry-4nx" secondAttribute="centerX" id="eC5-m7-ema"/>
+                            <constraint firstItem="sgq-S0-6pP" firstAttribute="centerX" secondItem="eyu-ry-4nx" secondAttribute="centerX" id="fp3-np-MJy"/>
+                            <constraint firstItem="9kF-4B-ldJ" firstAttribute="width" secondItem="b2h-xp-kSH" secondAttribute="width" multiplier="0.146667" id="j7q-pZ-Ak5"/>
+                            <constraint firstItem="9NR-vD-OIP" firstAttribute="centerX" secondItem="eyu-ry-4nx" secondAttribute="centerX" id="vWo-ah-eFB"/>
+                            <constraint firstItem="qsf-Qz-K4F" firstAttribute="top" secondItem="Z3w-F9-9aE" secondAttribute="bottom" constant="27" id="vzX-HL-mMi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eyu-ry-4nx"/>
                     </view>
                     <navigationItem key="navigationItem" id="9qi-PS-vzK"/>

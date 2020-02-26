@@ -18,8 +18,9 @@ class ForgotPassVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        send.layer.cornerRadius = send.frame.height/2
+//        send.layer.cornerRadius = send.frame.height/2
         
+        send.layer.cornerRadius = send.frame.height/5
 
     }
     
@@ -33,7 +34,7 @@ class ForgotPassVC: UIViewController {
                 if(dat["status"].boolValue==false){
                     let alertController = UIAlertController(title: "Error", message: dat["message"].stringValue, preferredStyle: .alert)
                     let action = UIAlertAction(title: "OK", style: .default) {(action) in
-                        self.dismiss(animated: true, completion: nil)
+                        alertController.dismiss(animated: true, completion: nil)
                     }
                     alertController.addAction(action)
                     self.present(alertController,animated: true)
@@ -50,7 +51,7 @@ class ForgotPassVC: UIViewController {
         }else{
             let alertController = UIAlertController(title: "Fail", message: "Please enter a valid email id to change the password", preferredStyle: .alert)
             let action = UIAlertAction(title: "OK", style: .default) {(action) in
-                self.dismiss(animated: true, completion: nil)
+                alertController.dismiss(animated: true, completion: nil)
             }
             alertController.addAction(action)
             self.present(alertController,animated: true)
