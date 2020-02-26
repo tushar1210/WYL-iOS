@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="129.98500749625188"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="ZR5-Aq-cYd">
             <objects>
-                <viewController id="Kht-YM-jWJ" sceneMemberID="viewController">
+                <viewController id="Kht-YM-jWJ" customClass="SignUpVC" customModule="WYL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jmT-bp-4O0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,24 +156,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="testing@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-Xn-ipI">
-                                <rect key="frame" x="32" y="194" width="311" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="DK1-Xn-ipI">
+                                <rect key="frame" x="32" y="239" width="311" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="tester1E@" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BbO-wY-LE1">
-                                <rect key="frame" x="32" y="247" width="311" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BbO-wY-LE1">
+                                <rect key="frame" x="32" y="292" width="311" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="tester1E@" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5tx-In-An8">
-                                <rect key="frame" x="32" y="300" width="311" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5tx-In-An8">
+                                <rect key="frame" x="32" y="345" width="311" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,16 +181,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nh5-DN-jKr">
-                                <rect key="frame" x="29" y="356" width="316" height="58.5"/>
+                                <rect key="frame" x="29" y="401" width="316" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <state key="normal" title="SIGN UP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="send:" destination="Kht-YM-jWJ" eventType="touchUpInside" id="pyt-Qb-VIT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-ff-LYf">
-                                <rect key="frame" x="29" y="433" width="316" height="59"/>
+                                <rect key="frame" x="29" y="468" width="316" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23137254900000001" green="0.34901960780000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="titleEdgeInsets" minX="-35" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -199,9 +202,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
+                                <connections>
+                                    <action selector="fb:" destination="Kht-YM-jWJ" eventType="touchUpInside" id="WKN-Al-HG0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2S-YJ-zBK">
-                                <rect key="frame" x="160" y="615" width="58" height="32"/>
+                                <rect key="frame" x="160" y="580" width="58" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <state key="normal" title="SKIP &gt;&gt;">
@@ -209,13 +215,24 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eb-4U-BDs">
-                                <rect key="frame" x="114" y="517" width="146" height="32"/>
+                                <rect key="frame" x="114" y="542" width="146" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
                                 <state key="normal" title="I AM A LANDLORD">
                                     <color key="titleColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="type:" destination="Kht-YM-jWJ" eventType="touchUpInside" id="T7K-Kp-o0n"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" disabledBackground="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-ve-RFJ">
+                                <rect key="frame" x="32" y="186" width="311" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.86013306219999996" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" smartInsertDeleteType="no"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Review your landlord and find your next home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh5-LY-N2I">
                                 <rect key="frame" x="37" y="137" width="300" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -228,10 +245,19 @@
                         <viewLayoutGuide key="safeArea" id="iXT-xe-y8b"/>
                     </view>
                     <navigationItem key="navigationItem" id="p0L-8v-3D0"/>
+                    <connections>
+                        <outlet property="confPasswordTF" destination="5tx-In-An8" id="klp-ME-gaY"/>
+                        <outlet property="emailTF" destination="DK1-Xn-ipI" id="Sai-Ta-ohO"/>
+                        <outlet property="fb" destination="Sfl-ff-LYf" id="K68-le-C4l"/>
+                        <outlet property="nameTF" destination="MMK-ve-RFJ" id="rse-et-HBQ"/>
+                        <outlet property="passwordTF" destination="BbO-wY-LE1" id="XfW-F2-dHf"/>
+                        <outlet property="send" destination="Nh5-DN-jKr" id="KMg-ac-Cas"/>
+                        <outlet property="type" destination="6eb-4U-BDs" id="nM4-t0-gta"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IjA-5E-Pu5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="824"/>
+            <point key="canvasLocation" x="136.80000000000001" y="823.53823088455783"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="SXU-pU-2zs">
