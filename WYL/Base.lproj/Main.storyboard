@@ -475,64 +475,114 @@ MANAGER &amp; BUILDING REVIEWS</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhf-Zw-dMQ">
-                                <rect key="frame" x="97" y="245" width="127" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="19"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WYL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6f-ql-pQC">
-                                <rect key="frame" x="232" y="245" width="44" height="23"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="19"/>
-                                <color key="textColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MISSION - EMPOWERING &amp; INFORMING THE RENTAL COMMUNITY." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yg-0X-8wO">
-                                <rect key="frame" x="13" y="276" width="349" height="13"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="11"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8s-Ow-1Ze">
-                                <rect key="frame" x="13" y="304" width="349" height="162"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">We use the possessive form of the word ‘who' because we're giving
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m1v-KC-gFY">
+                                <rect key="frame" x="-7" y="88" width="389" height="491"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-rj-Y5y">
+                                        <rect key="frame" x="74.5" y="20" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UNH-rj-Y5y" secondAttribute="height" multiplier="15:8" id="DT5-XH-YR7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eJC-Tc-xpG">
+                                        <rect key="frame" x="105.5" y="157" width="178.5" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rhf-Zw-dMQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="126.5" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="126.5" id="7F3-lw-eOH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="19"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WYL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="x6f-ql-pQC">
+                                                <rect key="frame" x="134.5" y="0.0" width="44" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="Kmx-C3-YFw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="19"/>
+                                                <color key="textColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="eJC-Tc-xpG" secondAttribute="height" multiplier="89:11" id="3fc-4t-UC1"/>
+                                            <constraint firstItem="x6f-ql-pQC" firstAttribute="centerY" secondItem="rhf-Zw-dMQ" secondAttribute="centerY" id="ak6-Dg-bVm"/>
+                                            <constraint firstItem="x6f-ql-pQC" firstAttribute="leading" secondItem="rhf-Zw-dMQ" secondAttribute="trailing" constant="8" id="rD0-ol-kOr"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISSION - EMPOWERING &amp; INFORMING THE RENTAL COMMUNITY." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Yg-0X-8wO">
+                                        <rect key="frame" x="20" y="188" width="349" height="13"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="11"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8s-Ow-1Ze">
+                                        <rect key="frame" x="20" y="216" width="349" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="n8s-Ow-1Ze" secondAttribute="height" multiplier="349:150" id="7AQ-EH-2YJ"/>
+                                        </constraints>
+                                        <string key="text">We use the possessive form of the word ‘who' because we're giving
 renters ownership of their living situation by putting housing in their hands. Through landlord reviews, community insights, neighborhood
 engagement, and available listings, we're ensuring that all WYL renters have a smooth and quality experience throughout their search and stay. For home providers, we’re providing feedback on ways they can improve, providing renter snapshots so they can better understand who they’re renting to, and we’re creating simple tools to seamlessly post and get rentals booked. Take ownership of your living situation and join the
 </string>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="10.5"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#WYLCommunity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-Jk-680">
-                                <rect key="frame" x="132" y="453" width="110" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
-                                <color key="textColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-k7-IiM">
-                                <rect key="frame" x="13" y="490" width="343" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
-                                <state key="normal" title="CONTINE NOW">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="DO3-qy-LW7" kind="show" id="ACh-pp-mdi"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="UNH-rj-Y5y">
-                                <rect key="frame" x="68" y="108" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="10.5"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bs4-k7-IiM">
+                                        <rect key="frame" x="23" y="402" width="343" height="52"/>
+                                        <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bs4-k7-IiM" secondAttribute="height" multiplier="343:52" id="axt-4p-QPk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="CONTINE NOW">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DO3-qy-LW7" kind="show" id="ACh-pp-mdi"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#WYLCommunity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5t7-Jk-680">
+                                        <rect key="frame" x="139.5" y="366" width="110" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="UNH-rj-Y5y" firstAttribute="top" secondItem="m1v-KC-gFY" secondAttribute="top" constant="20" id="1h6-M6-Sbm"/>
+                                    <constraint firstItem="5t7-Jk-680" firstAttribute="width" secondItem="m1v-KC-gFY" secondAttribute="width" multiplier="0.282776" id="BGn-Eh-ofV"/>
+                                    <constraint firstItem="eJC-Tc-xpG" firstAttribute="top" secondItem="UNH-rj-Y5y" secondAttribute="bottom" constant="9" id="CRn-DI-Xe5"/>
+                                    <constraint firstItem="5t7-Jk-680" firstAttribute="top" secondItem="n8s-Ow-1Ze" secondAttribute="bottom" id="CjV-iw-3pM"/>
+                                    <constraint firstItem="bs4-k7-IiM" firstAttribute="top" secondItem="5t7-Jk-680" secondAttribute="bottom" constant="20.5" id="DEb-5Z-7Na"/>
+                                    <constraint firstItem="n8s-Ow-1Ze" firstAttribute="top" secondItem="3Yg-0X-8wO" secondAttribute="bottom" constant="15" id="K1P-xA-vDy"/>
+                                    <constraint firstItem="n8s-Ow-1Ze" firstAttribute="width" secondItem="m1v-KC-gFY" secondAttribute="width" multiplier="0.897172" id="Vg8-JX-Wda"/>
+                                    <constraint firstItem="3Yg-0X-8wO" firstAttribute="width" secondItem="m1v-KC-gFY" secondAttribute="width" multiplier="0.897172" id="Wg0-Q4-Dcc"/>
+                                    <constraint firstItem="3Yg-0X-8wO" firstAttribute="centerX" secondItem="m1v-KC-gFY" secondAttribute="centerX" id="WnE-ib-Bqh"/>
+                                    <constraint firstItem="5t7-Jk-680" firstAttribute="centerX" secondItem="m1v-KC-gFY" secondAttribute="centerX" id="YgB-ik-xEf"/>
+                                    <constraint firstItem="UNH-rj-Y5y" firstAttribute="width" secondItem="m1v-KC-gFY" secondAttribute="width" multiplier="0.616967" id="Yjk-Nl-UdG"/>
+                                    <constraint firstItem="n8s-Ow-1Ze" firstAttribute="centerX" secondItem="m1v-KC-gFY" secondAttribute="centerX" id="bks-U7-9NI"/>
+                                    <constraint firstItem="bs4-k7-IiM" firstAttribute="width" secondItem="m1v-KC-gFY" secondAttribute="width" multiplier="0.881748" id="hj7-vy-kpt"/>
+                                    <constraint firstItem="eJC-Tc-xpG" firstAttribute="width" secondItem="m1v-KC-gFY" secondAttribute="width" multiplier="0.458869" id="mcy-eU-CPO"/>
+                                    <constraint firstItem="3Yg-0X-8wO" firstAttribute="top" secondItem="eJC-Tc-xpG" secondAttribute="bottom" constant="9" id="pFJ-o4-357"/>
+                                    <constraint firstItem="UNH-rj-Y5y" firstAttribute="centerX" secondItem="m1v-KC-gFY" secondAttribute="centerX" id="sAC-Tx-CMI"/>
+                                    <constraint firstItem="eJC-Tc-xpG" firstAttribute="centerX" secondItem="m1v-KC-gFY" secondAttribute="centerX" id="yMB-j6-OCc"/>
+                                    <constraint firstItem="bs4-k7-IiM" firstAttribute="centerX" secondItem="m1v-KC-gFY" secondAttribute="centerX" id="yqm-U3-ZrU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m1v-KC-gFY" firstAttribute="width" secondItem="lyJ-1n-Tv5" secondAttribute="width" multiplier="1.03733" id="HHF-Yc-isa"/>
+                            <constraint firstItem="m1v-KC-gFY" firstAttribute="height" secondItem="lyJ-1n-Tv5" secondAttribute="height" multiplier="0.736132" id="aqb-y9-drq"/>
+                            <constraint firstItem="m1v-KC-gFY" firstAttribute="centerY" secondItem="6TQ-g2-CxK" secondAttribute="centerY" id="biG-Rv-WB7"/>
+                            <constraint firstItem="m1v-KC-gFY" firstAttribute="centerX" secondItem="6TQ-g2-CxK" secondAttribute="centerX" id="syf-6O-8Dm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6TQ-g2-CxK"/>
                     </view>
                     <navigationItem key="navigationItem" id="aDM-yr-ggb"/>
@@ -542,7 +592,7 @@ engagement, and available listings, we're ensuring that all WYL renters have a s
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hk5-h9-3kv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="130"/>
+            <point key="canvasLocation" x="944.79999999999995" y="129.98500749625188"/>
         </scene>
         <!--Forgot PassVC-->
         <scene sceneID="CvV-xP-lcc">
