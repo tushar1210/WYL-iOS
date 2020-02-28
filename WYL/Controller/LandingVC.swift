@@ -8,23 +8,37 @@
 
 import UIKit
 
-class LandingVC: UIViewController {
+class LandingVC: UIViewController{
 
+    @IBOutlet weak var review: UIButton!
+    @IBOutlet weak var propertyTableView: UITableView!
+    @IBOutlet weak var residentImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        propertyTableView.delegate = self
+        propertyTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+
+}
+
+
+
+extension LandingVC:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell.init(style: .default, reuseIdentifier: "cell")
+        
+        return cell
+    }
+    
+    
 }

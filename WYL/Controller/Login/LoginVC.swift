@@ -53,6 +53,7 @@ class LoginVC: UIViewController {
                     self.user.userType = dat["user"]["user_type"].stringValue
                     self.user.email = dat["user"]["email"].stringValue
                     self.user.country = dat["user"]["country"].stringValue
+                    self.performSegue(withIdentifier: "welcome", sender: nil)
                 }else{
                     let ac = UIAlertController(title: "Incorrect Credentials", message: "Please check the credentials", preferredStyle: .alert)
                     let action = UIAlertAction(title: "OK", style: .default) { (action) in

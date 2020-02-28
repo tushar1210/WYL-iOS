@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k1w-af-Via">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -428,8 +428,17 @@ MANAGER &amp; BUILDING REVIEWS</string>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZR-Ae-EWL">
+                                        <rect key="frame" x="123" y="207" width="129" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                        <state key="normal" title="Read Review">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvC-NG-nky">
-                                        <rect key="frame" x="101" y="966" width="173" height="45"/>
+                                        <rect key="frame" x="25" y="966" width="324" height="70"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.27450980390000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="18"/>
@@ -438,6 +447,7 @@ MANAGER &amp; BUILDING REVIEWS</string>
                                         </state>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="9Mh-Xi-WRv"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="b6x-ta-ggV"/>
                             </scrollView>
@@ -447,6 +457,11 @@ MANAGER &amp; BUILDING REVIEWS</string>
                     </view>
                     <navigationItem key="navigationItem" id="cdk-CR-oGP"/>
                     <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <outlet property="propertyTableView" destination="TSb-9o-mgK" id="UF1-RS-Au6"/>
+                        <outlet property="residentImageView" destination="5hh-I2-HB3" id="ux7-NE-Y3h"/>
+                        <outlet property="review" destination="gZR-Ae-EWL" id="zHs-4P-TeI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9nq-Qd-7d7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -751,7 +766,7 @@ engagement, and available listings, we're ensuring that all WYL renters have a s
                         <outlet property="fb" destination="5Pv-44-Xld" id="Ecg-go-Ncj"/>
                         <outlet property="loginButton" destination="eoV-wf-tuF" id="oTf-yu-VyY"/>
                         <outlet property="passwordTF" destination="1Np-39-HIJ" id="kAZ-QV-bYR"/>
-                        <segue destination="k1w-af-Via" kind="show" id="OWU-AN-Lhf"/>
+                        <segue destination="k1w-af-Via" kind="show" identifier="welcome" id="OWU-AN-Lhf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r2G-we-0Nn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -767,6 +782,6 @@ engagement, and available listings, we're ensuring that all WYL renters have a s
         <image name="tip" width="119" height="127"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ULV-7v-fCy"/>
+        <segue reference="OWU-AN-Lhf"/>
     </inferredMetricsTieBreakers>
 </document>

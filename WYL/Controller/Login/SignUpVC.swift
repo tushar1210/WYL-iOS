@@ -24,8 +24,8 @@ class SignUpVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        send.layer.cornerRadius = send.frame.height/2
-        fb.layer.cornerRadius = fb.frame.height/2
+        send.layer.cornerRadius = send.frame.height/5
+        fb.layer.cornerRadius = fb.frame.height/5
         fb.imageView?.contentMode = .scaleAspectFit
         addCorner(tf: [emailTF,nameTF,passwordTF,confPasswordTF])
         emailTF.layer.cornerRadius = 25
